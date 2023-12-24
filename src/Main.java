@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Dog Rex = new Dog(7, "Rex");
-        Dog Odin = new Dog(5, "Odin");
+        Dog Rex = new Dog("Rex", 7);
+        Dog Odin = new Dog("Odin", 5);
 
         //output first
         System.out.println(Rex.getAge());
@@ -20,26 +20,5 @@ public class Main {
 
         System.out.println(Odin.getAge());
         System.out.println(Odin.getName());
-    }
-
-    public static class Dog {
-        int age;
-        String name;
-        public Dog(int age, String name) {
-            this.age = age;
-            this.name = name;
-        }
-        public void setAge(int age){
-            this.age = age;
-        }
-        public void setName(String name) {
-            this.name = name;
-        }
-        public int getAge() {
-            return age;
-        }
-        public String getName() {
-            return name;
-        }
     }
 }
