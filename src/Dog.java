@@ -1,22 +1,22 @@
 public class Dog {
-    private int age;
+    private String breed;
     private String name;
 
-    public Dog(String name, int age){
+    public Dog(String name, String breed){
         this.name = name;
-        this.age = age;
+        this.breed = breed;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     public void setName(String name){
         this.name = name;
     }
 
-    public int getAge(){
-        return age;
+    public String getBreed(){
+        return breed;
     }
     public String getName(){
         return name;

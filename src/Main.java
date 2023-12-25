@@ -1,24 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        Dog Rex = new Dog("Rex", 7);
-        Dog Odin = new Dog("Odin", 5);
+        Dog Rex = new Dog("Rex", "Husky");
+        Dog Odin = new Dog("Odin", "Labrador");
 
-        //output first
-        System.out.println(Rex.getAge());
+        //output first to confirm correct assignment from constructor
+        System.out.println(Rex.getBreed());
         System.out.println(Rex.getName());
 
-        System.out.println(Odin.getAge());
+        System.out.println(Odin.getBreed());
         System.out.println(Odin.getName());
 
-        Rex.setAge(3);
         Rex.setName("Trogdor");
-        Odin.setAge(4);
+        Rex.setBreed("German Shepherd");
         Odin.setName("Thor");
+        Odin.setBreed("Thor");
 
-        System.out.println(Rex.getAge());
+        System.out.println(Rex.getBreed());
         System.out.println(Rex.getName());
 
-        System.out.println(Odin.getAge());
+        System.out.println(Odin.getBreed());
         System.out.println(Odin.getName());
     }
 }
